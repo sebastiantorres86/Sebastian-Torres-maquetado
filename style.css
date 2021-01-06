@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem;
+  width: 1440px;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-b {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-c {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.banner {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  background-color: #fff76a;
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-weight: 400;
+  padding: 0;
+}
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.price {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.iva {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.price-en {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1rem;
+  color: grey;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.ad {
+  width: 250px;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 250px;
+  height: auto;
+  padding: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.card:hover {
+  margin: 0 0.2rem;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.07),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 100px 80px rgba(0, 0, 0, 0.028);
+}
+
+.card:hover .hide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+input {
+  align-self: center;
+  width: 150px;
+  padding: 1rem;
+}
+
+button {
+  background-color: red;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin: .5rem;
+  cursor: pointer;
+  width: 200px;
+  font-size: 1.1rem;
+  align-self: center;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 1rem;
+}
+
+/* slideshow */
+.mySlides {display: none}
+/* img {vertical-align: middle;} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 48px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+  left: -20px ;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: -150px;
+  border-radius: 3px 0 0 3px;
+}
